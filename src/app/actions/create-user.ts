@@ -6,7 +6,7 @@ const saveUser = async (userData: any) => {
   return userData;
 };
 
-export async function createUser(formData: FormData) {
+export async function createUser(email: string, name: string) {
   const verification = await checkBotId();
 
   if (verification.isBot) {
@@ -14,8 +14,8 @@ export async function createUser(formData: FormData) {
   }
 
   const userData = {
-    name: formData.get("name") as string,
-    email: formData.get("email") as string,
+    name,
+    email,
   };
 
   const user = await saveUser(userData);
