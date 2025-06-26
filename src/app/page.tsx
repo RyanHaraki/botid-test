@@ -1,3 +1,5 @@
+"use client";
+
 import { createUser } from "./actions/create-user";
 
 export default function Home() {
