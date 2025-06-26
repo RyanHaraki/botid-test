@@ -14,6 +14,5 @@ export async function POST(request: NextRequest) {
 }
 
 const processUserRequest = async () => {
-  const user = localStorage.getItem("user");
-  return user;
+  console.log("Processing user request");
 };
