@@ -1,11 +1,6 @@
 "use server";
 import { checkBotId } from "botid/server";
 
-const saveUser = async (userData: any) => {
-  localStorage.setItem("user", JSON.stringify(userData));
-  return userData;
-};
-
 export async function createUser(email: string, name: string) {
   const verification = await checkBotId();
 
@@ -18,6 +13,5 @@ export async function createUser(email: string, name: string) {
     email,
   };
 
-  const user = await saveUser(userData);
-  return { success: true, user };
+  return { success: true, user: userData };
 }
