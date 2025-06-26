@@ -14,5 +14,5 @@ export async function POST(request: NextRequest) {
 }
 
 const processUserRequest = async () => {
-  console.log("Processing user request");
+  return "User request processed";
 };
