@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     return NextResponse.json(
-      { error: "Invalid request body", verification },
+      { error: "Invalid request body", verification: verification },
       { status: 400 }
     );
   }
