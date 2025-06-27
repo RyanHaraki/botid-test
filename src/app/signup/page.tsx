@@ -38,6 +38,7 @@ const Signup = () => {
       if (response.ok) {
         setMessage(`Success! User created with ID: ${data.user.id}`);
         setFormData({ name: "", email: "", password: "" });
+        console.log(data.verification);
       } else {
         setMessage(`Error: ${data.error}`);
       }

@@ -38,6 +38,7 @@ export async function POST(request: NextRequest) {
       success: true,
       message: "User created successfully",
       user: mockUser,
+      verification,
     });
   } catch (error) {
     return NextResponse.json(
