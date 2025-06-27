@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { createUser } from "./actions/create-user";
 
 export default function Home() {
@@ -16,6 +17,10 @@ export default function Home() {
       >
         run sensitive action
       </button>
+      <div className="flex gap-4">
+        <Link href="/protected">Protected</Link>
+        <Link href="/signup">Signup</Link>
+      </div>
     </div>
   );
 }

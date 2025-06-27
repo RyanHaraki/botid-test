@@ -23,6 +23,14 @@ const protectedRoutes = [
     path: "/",
     method: "POST",
   },
+  {
+    path: "/signup",
+    method: "POST",
+  },
+  {
+    path: "/protected",
+    method: "GET",
+  },
 ];
 
 export default function RootLayout({
