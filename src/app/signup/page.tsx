@@ -41,6 +41,7 @@ const Signup = () => {
         console.log(data.verification);
       } else {
         setMessage(`Error: ${data.error}`);
+        console.log(data);
       }
     } catch (error) {
       setMessage("Network error occurred");
