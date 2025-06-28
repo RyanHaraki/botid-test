@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
 
     // Mock user creation - in a real app, you'd save to database
     const mockUser = {
-      id: Math.random().toString(36).substr(2, 9),
+      id: Math.random().toString(36).substring(2, 9),
       email,
       name,
       createdAt: new Date().toISOString(),
