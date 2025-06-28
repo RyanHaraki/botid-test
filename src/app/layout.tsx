@@ -24,7 +24,7 @@ const protectedRoutes = [
     method: "POST",
   },
   {
-    path: "/signup",
+    path: "/api/signup",
     method: "POST",
   },
   {
